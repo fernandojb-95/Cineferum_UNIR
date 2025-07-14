@@ -1,0 +1,40 @@
+.header {
+  background-color: var(--carbon);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__content, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.main-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .main-nav {
+    flex-direction: column;
+  }
+}

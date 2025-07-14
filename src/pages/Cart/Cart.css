@@ -1,0 +1,35 @@
+.cart-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 1rem;
+}
+
+.cart-item__cover {
+  width: 200px;
+}
+
+.cart__total {
+  margin: 2rem 0;
+}
+
+.cart-item__info {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+@media(max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item__cover {
+    margin: 0 auto;
+  }
+}
