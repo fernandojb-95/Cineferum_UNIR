@@ -79,4 +79,8 @@
       "title"
       "movie";
   }
+  .movies-hero__search {
+    font-size: 20px;
+    width: 90%;
+  }
 }
